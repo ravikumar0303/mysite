@@ -8,6 +8,10 @@ app.use(express.static(path.join(__dirname,'public')));
 app.get('/', function (req, res) {
     res.sendFile(path.join(___dirname + '/index.html'));
  });
+ 
+ app.get('/', function (req, res) {
+    res.sendFile(path.join(___dirname + '/script/app.js'));
+ });
 
 
 app.get('/hello', function (req, res) {
